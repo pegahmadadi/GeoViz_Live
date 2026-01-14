@@ -957,6 +957,7 @@
                     styleStr = `style="flex-grow: ${growFactor}; flex-basis: ${flexBasis}px;"`;
                 }
 
+                const fileName = imgSrc.split('/').pop().split('?')[0].split('#')[0];
                 galleryItemsHTML += `
                 <div class="card gallery-card" id="card-${index}" data-img="${imgSrc}" ${styleStr}>
                     <div class="card-inner">
